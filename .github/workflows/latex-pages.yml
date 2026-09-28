@@ -89,6 +89,7 @@ jobs:
         with:
           packages: texlive-latex-extra texlive-science texlive-fonts-extra texlive-fonts-recommended texlive-latex-recommended lmodern pandoc
           version: 1.1
+          execute_install_scripts: true
       - name: Verify the TeX toolchain is usable
         run: |
           # A restored cache that skipped texlive's postinst would leave
